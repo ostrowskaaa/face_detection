@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>face detection</title>
-</head>
- 
-<body>
-  <ul>
-    <li>
-      <a href="{% url 'about' %}">about</a>
-    </li>
-    <li>
-      <a href="{% url 'detection' %}">detection</a>
-    </li>
-    <li>
-      <a href="{% url 'gallery' %}">gallery</a>
-    </li>
-  </ul>
-</body>
+{% extends 'base.html' %}
 
-</html>
+{% block content %}
+  <h1>home</h1>
+{% endblock %}
