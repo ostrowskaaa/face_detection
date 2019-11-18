@@ -27,5 +27,6 @@ def detection(request):
     return render(request, 'detection.html',{'form':form})
 
 def gallery(request):
-
+    imageURL = settings.MEDIA_URL + form.instance.document.name
+    gallery(settings.MEDIA_ROOT_URL + imageURL)
     return render(request, 'gallery.html')
