@@ -12,25 +12,25 @@
       <h1>Django Face Detector</h1>
     </header>
 
-    <div id="page-container">
-      <div id="content-wrap">
+    <div>
+      <div>
         <nav>
             <ul>
                 <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'detection' %}">Detection</a></li>
-                <li><a href="{% url 'upload' %}">Upload</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
             </ul>
         </nav>
 
-        <div>
+        <article>
           {% block content %}
           {% endblock %}
-        </div>
+        </article>
       </div>
 
-      <footer id="footer">
-        <p>coś tam na dole</p>
+      <footer>
+        <h2>coś tam na dole</h2>
       </footer>
   </div>
 
