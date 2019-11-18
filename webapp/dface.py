@@ -28,3 +28,8 @@ def dface(path):
    else:
       print('someting error')
       print(path)
+     
+def gallery(path):
+  img = cv2.imread(path, 1)
+  cv2.imwrite(path, img)
+ 
