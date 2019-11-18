@@ -1,11 +1,6 @@
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <title>Title</title>
-</head>
-<body>
+{% block content %}
 
 <h1>image upload example</h1>
  <form method="POST" class="post-form" enctype="multipart/form-data">
@@ -19,7 +14,6 @@
  <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
  {% endif %}
 
-<p><a href="{% url 'upload' %}">Return to home</a></p>
+<p><a href="{% url 'home' %}">Return to home</a></p>
 
-</body>
-</html>
+{% endblock %}

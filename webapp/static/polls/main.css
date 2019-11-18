@@ -1,0 +1,99 @@
+body{
+  background-image: url("/static/img/bg.jpg");
+}
+
+p{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  color: #000080;
+  background-color: #000080;
+}
+
+header{
+  margin: 5px;
+  padding: 5px;
+  color: #000080;
+  border: 1px solid #ccc;
+}
+
+article{
+  align-items: center;
+  align-self: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+footer{
+
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+input[type=file], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type=submit] {
+  width: 100%;
+  background-color: #002395;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+
+input[type=submit]:hover {
+  background-color: #72bcd4;
+}
+
+/* Menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f324;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+  background-color: #ddd;
+}

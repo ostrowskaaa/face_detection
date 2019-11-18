@@ -7,7 +7,7 @@ from . import views
 urlpatterns = [
     url('^$', views.home, name='home'),
     url('detection/', views.detection, name='detection'),
-    url('gallery/', views.gallery, name='gallery'),
+    url('upload/', views.upload, name='upload'),
     url('about/', views.about, name='about'),
 ]
 
