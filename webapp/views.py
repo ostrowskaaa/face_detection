@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
-from .forms import UploadImageForm
 from .forms import ImageUploadForm
 from .dface import dface
+from .dface import gallery
 
 def home(request):
     return render(request, 'home.html')
