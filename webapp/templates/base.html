@@ -8,31 +8,30 @@
   </head>
 
   <body>
-    <header>
+
+    <header id=menu>
+
       <h1>Django Face Detector</h1>
+
+      <nav>
+        <ul>
+          <li id=left><a href="{% url 'home' %}">Home</a></li>
+          <li id=left><a href="{% url 'detection' %}">Detection</a></li>
+          <li id=left><a href="{% url 'gallery' %}">Gallery</a></li>
+          <li id=right><a href="{% url 'about' %}">About</a></li>
+        </ul>
+      </nav>
+
     </header>
 
-    <div>
-      <div>
-        <nav>
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'detection' %}">Detection</a></li>
-                <li><a href="{% url 'gallery' %}">Gallery</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
-            </ul>
-        </nav>
+    <article>
+      {% block content %}
+      {% endblock %}
+    </article>
 
-        <article>
-          {% block content %}
-          {% endblock %}
-        </article>
-      </div>
-
-      <footer>
-        <h2>coś tam na dole</h2>
-      </footer>
-  </div>
+    <footer>
+      <h2>footer</h2>
+    </footer>
 
   </body>
 </html>
