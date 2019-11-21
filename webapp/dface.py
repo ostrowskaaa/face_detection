@@ -29,8 +29,4 @@ def dface(path):
       print('something gone wrong')
       print(path)
 
-           
-def gallery(path):
-  img = cv2.imread(path, 1)
-  cv2.imwrite(path, img)
- 
+  
