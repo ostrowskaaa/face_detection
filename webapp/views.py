@@ -4,6 +4,7 @@ from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 from .forms import ImageUploadForm
 from .dface import dface
+from .models import ImageUploadodel
 from cv2 import cv2
 
 def home(request):
