@@ -1,4 +1,16 @@
 {% extends 'base.html' %}
+{% load webapp_tags %}
 
 {% block content %}
+
+<div width: 400px; height: 200px; color: #white;>
+{% for name in image_names %}
+    <a href="{{ imageURL }}{{ name }}">
+        <img src="{{ imageURL }}{{ name }}">
+    </a>
+{% endfor %}
+
+ <p><a href="{% url 'home' %}">Return to home</a></p>
+</div>
+
 {% endblock %}
