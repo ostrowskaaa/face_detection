@@ -3,10 +3,7 @@ from django.shortcuts import render, redirect
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 from .forms import ImageUploadForm
-from .models import ImageUploadModel
-#from .forms import GalleryForm
 from .dface import dface
-#from .dface import gallery
 from cv2 import cv2
 
 def home(request):
