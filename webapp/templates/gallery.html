@@ -7,6 +7,8 @@
 {% for name in image_names %}
     <a href="{{ imageURL }}{{ name }}">
         <img src="{{ imageURL }}{{ name }}">
+        </br><b>{{ image.title }}</b>
+        </br>{{ image.description }} </br>
     </a>
 {% endfor %}
 
