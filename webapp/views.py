@@ -3,8 +3,8 @@ from django.shortcuts import render, redirect
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 from .forms import ImageUploadForm
-from .dface import dface
 from .models import ImageUploadModel
+from .dface import dface
 from cv2 import cv2
 
 def home(request):
@@ -34,4 +34,4 @@ def gallery(request):
     images = ImageUploadModel.objects.all()
     for image in images:
         print(image.title, image.description, image.document, image.uploaded_at)
-    return render(request, "gallery.html", {'image_names': img_list, 'imageURL': imageURL[1:]})
+    return render(request, "gallery.html", {'image_names': img_list, 'imageURL': imageURL[1:], 'image': image})
